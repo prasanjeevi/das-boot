@@ -4,6 +4,13 @@ Pluralsight course -
 Creating Your First Spring Boot Application
 by Dan Bunker
 
+### Course info
+> Level: Intermediate
+> Duration: 2h 35m
+> Released: 17 Mar 2016
+> Started: 02 Aug 2017
+> Completed: 03 Aug 2017
+
 ## Spring boot dependency
 ```
 <parent>
@@ -50,7 +57,7 @@ Sidenotes: Mockito, Hamcrest
 ## Properties
 `application-{profile}.properties`
 
-`-Dspring.profiles.active=prod``
+`-Dspring.profiles.active=prod`
 
 ```
 logging.level.org.springframework.web=DEBUG
