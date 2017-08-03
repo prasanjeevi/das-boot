@@ -49,7 +49,9 @@ Sidenotes: Mockito, Hamcrest
 
 ## Properties
 `application-{profile}.properties`
+
 `-Dspring.profiles.active=prod``
+
 ```
 logging.level.org.springframework.web=DEBUG
 
@@ -70,17 +72,28 @@ Sidenotes: SnakeYAML, spring.mvc.date-format
 
 ## Issues and solutions
 1. Project build error: Non-resolvable parent POM
-### Solution:
+
+Solution:
+
 Right click the project->Maven->Update Project->Check checkbox "Force Update of Snapshots/Releases". Click OK.
 
 2. java.net.BindException: Address already in use: bind
-### Solution: Use different port or kill the process which holds the port
+
+Solution:
+
+Use different port or kill the process which holds the port
 
 3. org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to scan for SQL migrations in location: classpath:db/migration
-### Solution: Ensure the db.migration is exists
+
+Solution:
+
+Ensure the db.migration is exists
 
 4. No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
-### Solution: On your Eclipse IDE, go into Window > Preferences > Java > Installed JREs > and check your installed JREs. You should have an entry with a JDK there.
+
+Solution:
+
+On your Eclipse IDE, go into Window > Preferences > Java > Installed JREs > and check your installed JREs. You should have an entry with a JDK there.
 Select the Execution Env as show below. Click OK
 Then Right-Click on your Project -> Maven -> Update Project
 
